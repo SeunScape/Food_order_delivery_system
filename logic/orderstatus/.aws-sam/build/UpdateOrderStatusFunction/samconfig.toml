@@ -1,0 +1,9 @@
+version = 0.1
+[default.deploy.parameters]
+stack_name = "order-polling"
+resolve_s3 = true
+s3_prefix = "order-polling"
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "OrdersTablename=\"user-orders-OrdersTable-1HOFH6AFZTNC6\" UserPool=\"us-east-1_syayYKIjn\" Stage=\"dev\""
+image_repositories = []
